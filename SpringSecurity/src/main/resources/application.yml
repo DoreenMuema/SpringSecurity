@@ -1,0 +1,18 @@
+logging:
+  level:
+    org.springframework.security: DEBUG
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Client_Credential_Grant
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
